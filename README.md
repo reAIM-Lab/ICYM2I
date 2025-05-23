@@ -1,6 +1,6 @@
 # ICYM2I: The illusion of multimodal informativeness under missingness
 
-This repository contains the code used in [ICYM2I: The illusion of multimodal informativeness under missingness](), a framework for the evaluation of predictive performance and information gain under missingness through inverse probability weighting-based correction.
+This repository contains the code used in [ICYM2I: The illusion of multimodal informativeness under missingness](https://arxiv.org/abs/2505.16953), a framework for the evaluation of predictive performance and information gain under missingness through inverse probability weighting-based correction.
 
 ## Proposed methodology ICYM2I
 
@@ -57,8 +57,16 @@ Due to the policies of our clinical center, we are unable to share the data we u
 2. Generate respective modality embeddings through `shd_deidentified/generate_cxr_embeddings_deidentified.ipynb` and `shd_deidentified/generate_ecg_embeddings_deidentified.ipynb.ipynb`.
 3. Use `experiments/run_ecg+cxr.ipynb` to reproduce our results. While the data is not available, this notebook serves as a tutorial to apply the different corrections on your own dataset.
 
-## Setup
-
 ## Requirements
 All requirements are available as a `conda` enviornment under `clinical_pid_env.yaml`.
 Additionally, the structural heart disease detection task requires the `fairseq_signals_env.yaml` and `tf.yaml` environments for electrocardiogram and chest radiograph embedding models, respectively.
+
+## Citation
+
+```
+  @article{choi2025icym2i,
+  title={ICYM2I: The illusion of multimodal informativeness under missingness},
+  author={Choi, Young Sang and Jeanselme, Vincent and Elias, Pierre and Joshi, Shalmali},
+  year={2025}
+  }
+```
