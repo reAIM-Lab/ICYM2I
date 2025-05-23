@@ -54,12 +54,12 @@ Due to the policies of our clinical center, we are unable to share the data we u
 0. Setup the CXR and ECG environments through `fairseq_signals_env.yaml` and `tf.yaml`, respectively.
 1. Collect [ELIXR](https://huggingface.co/google/cxr-foundation) and [ECG-FM](https://github.com/bowang-lab/ECG-FM) model weights from `HuggingFace`.
     - We recommend reading the [`fairseq-signals` repository](https://github.com/Jwoo5/fairseq-signals) for ECG-FM.
-2. Generate respective modality embeddings through `shd_deidentified/generate_cxr_embeddings_deidentified.ipynb` and `shd_deidentified/generate_ecg_embeddings_deidentified.ipynb.ipynb`.
+2. Generate respective modality embeddings through `shd_deidentified/generate_cxr_embeddings_deidentified.ipynb` and `shd_deidentified/generate_ecg_embeddings_deidentified.ipynb`.
 3. Use `experiments/run_ecg+cxr.ipynb` to reproduce our results. While the data is not available, this notebook serves as a tutorial to apply the different corrections on your own dataset.
 
 ## Requirements
 All requirements are available as a `conda` enviornment under `clinical_pid_env.yaml`.
-Additionally, the structural heart disease detection task requires the `fairseq_signals_env.yaml` and `tf.yaml` environments for electrocardiogram and chest radiograph embedding models, respectively.
+Additionally, the structural heart disease detection task requires the `ecg_env.yaml` and `cxr_env.yaml` environments for electrocardiogram and chest radiograph embedding models, respectively.
 
 ## Citation
 
